@@ -62,7 +62,7 @@ app.get('/about',(req,res) => {
     //         age : 25
     //     }
     // ])
-    res.render('help',{
+    res.render('about',{
         title : 'about page',
         name : 'About Us',
         create : 'Bh'
