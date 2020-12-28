@@ -9,10 +9,12 @@ const forecast = (lat,lon,callback ) => {
         }else if(body.error){
             callback('bad data,try another',undefined)
         }else{
+            console.log(body)
             callback(undefined,{
                 lat : body.location.lat,
                 lon : body.location.lon,
-                place : body.location.name
+                place : body.location.name,
+                time : body.location.localtime
             })
         }
     })
